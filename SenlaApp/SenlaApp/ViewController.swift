@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var ViewCus: UIView!
     @IBOutlet weak var myButton: UIButton!
-    
+    @IBOutlet weak var subtitle: UILabel!
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -51,6 +51,8 @@ class ViewController: UIViewController {
         print("Button did tap")
         titleLabel.text = "App"
         ViewCus.backgroundColor = .green
+        subtitle.text = "Button taped"
+        myButton.isHidden = true
     }
 }
 
